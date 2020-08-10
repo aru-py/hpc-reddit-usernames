@@ -1,4 +1,4 @@
-# hcp-reddit-usernames
+# hpc-reddit-usernames
 This repo provides the most exhaustive list of available usernames on reddit that are also in the English corpus. It acheives this by using parallel processing to ping at a much faster rate than possible using a single processor.
 
 # Usage
