@@ -1,0 +1,14 @@
+#PBS -q bigmem
+#PBS -l select=1:ncpus=80:mem=140gb,walltime=72:00:00
+#PBS -m abe
+#PBS -j oe
+#PBS -o q.txt
+
+if [ -f load_proxy ]; then
+    bash load_proxy
+fi
+
+module load anaconda3/5.1.0-gcc
+cd h*
+python main.py
+
